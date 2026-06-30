@@ -27,7 +27,7 @@ jobs:
     - name: Construir y subir imagen
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: back-ventas
+        ECR_REPOSITORY: app-back-ventas
         IMAGE_TAG: latest
       run: |
         cd back-Ventas_SpringBoot/Springboot-API-REST
