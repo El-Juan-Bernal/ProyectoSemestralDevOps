@@ -2,7 +2,7 @@ name: Desplegar Backend Despacho a Amazon ECR
 
 on:
   push:
-    branches: [ "main" ] # O "master"
+    branches: [ "main" ]
     paths:
       - 'back-Despachos_SpringBoot/**' # Solo se ejecuta si hay cambios aquí
 
@@ -27,7 +27,7 @@ jobs:
     - name: Construir y subir imagen
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: app-back-despacho
+        ECR_REPOSITORY: back-despacho
         IMAGE_TAG: latest
       run: |
         # Entramos hasta donde está el Dockerfile
