@@ -1,0 +1,6 @@
+# Variables de entorno reales (NO subir credenciales a GitHub)
+.env
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
